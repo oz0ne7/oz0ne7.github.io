@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    color: #000;
+}
+
+.hero-section {
+    background: url('image/background_image.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.section-label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #e0e0e0;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.project-card {
+    flex: 1 1 30%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    margin: 10px; 
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-section {
+    background-color: #222;
+    color: #fff;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex: 1 1 100%; 
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .section-label {
+        font-size: 1.25rem;
+    }
+}
